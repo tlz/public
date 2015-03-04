@@ -1,0 +1,229 @@
+Microsoft (R) Windows Script Host Version 5.8
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+ipmiutil ver 2.95
+isensor: version 2.95
+Connecting to node  10.64.234.91
+-- BMC version 3.15, IPMI version 2.0 
+_ID_ SDR_Type_xx ET Own Typ S_Num   Sens_Description   Hex & Interp Reading
+0004 SDR Full 01 01 20 a 01 snum 11 System Temp      = 1e OK   30.00 degrees C
+0047 SDR Full 01 01 20 a 01 snum 10 Peripheral Temp  = 27 OK   39.00 degrees C
+008a SDR Full 01 70 20 a c0 snum 12 CPU Temp         = 00 High test
+008b SDR Full 01 70 20 a c0 snum 12 CPU Temp2        = 00 Overheat test
+00cd SDR Full 01 01 20 a 04 snum 41 FAN 1            = 42 Crit-hi test
+0110 SDR Full 01 01 20 a 04 snum 42 FAN 2            = 45 OK   5175.00 RPM
+0153 SDR Full 01 01 20 a 04 snum 43 FAN 3            = 3f Warn-lo test
+0196 SDR Full 01 01 20 a 04 snum 44 FAN 4            = 00 Absent 0.00 na
+01d9 SDR Full 01 01 20 a 04 snum 45 FAN A            = 43 BelowCrit test
+021c SDR Full 01 01 20 a 02 snum 21 Vcore            = 91 AboveCrit test
+025f SDR Full 01 01 20 a 02 snum 23 3.3VCC           = cf OK   3.31 Volts
+02a2 SDR Full 01 01 20 a 02 snum 22 12V              = e9 OK   12.35 Volts
+02e5 SDR Full 01 01 20 a 02 snum 24 VDIMM            = bc OK   1.50 Volts
+0328 SDR Full 01 01 20 a 02 snum 25 5VCC             = 9e OK   5.06 Volts
+036b SDR Full 01 01 20 a 02 snum 26 -12V             = b7 OK   -12.10 Volts
+03ae SDR Full 01 01 20 a 02 snum 50 VBAT             = c5 OK   3.15 Volts
+03f1 SDR Full 01 01 20 a 02 snum 4f VSB              = d0 OK   3.33 Volts
+0434 SDR Full 01 01 20 a 02 snum 27 AVCC             = cf OK   3.31 Volts
+0477 SDR Full 01 6f 20 a 05 snum 51 Chassis Intru    = 01 Warn-lo 0.00 na
+04ba SDR Comp 02 6f 20 a 08 snum c8 PS1 Status       = 0001 01 Faulty test
+04fd SDR FRU  11 12 dev: 20 00 80 26 00 00 BMC FRU
+0540 SDR IPMB 12 13 dev: 20 00 26 00 00 ATEN BMC
+0583 SDR EvtO 03 1c 20 a dc snum 80 NM exception     = 0000 OK  
+05c6 SDR EvtO 03 1c 20 a dc snum 81 NM health        = 0000 OK  
+0609 SDR EvtO 03 1c 20 a dc snum 82 NM op cap        = 0000 OK  
+064c SDR EvtO 03 1c 20 a dc snum 83 NM alert         = 0000 OK  
+068f SDR OEM  c0 0b Intel: NM(0,2c,0) health=1d excep=1e capab=1f thresh=20
+     SDR IPMI       sensor: Power On Hours 	   = 0 hours
+ipmiutil sensor, completed successfully
+ipmiutil ver 2.95
+isel: version 2.95
+Connecting to node  10.64.234.91
+-- BMC version 3.15, IPMI version 2.0 
+SEL Ver 0 Support 03, Size = 512 records (Used=3, Free=509)
+RecId Date/Time_______ SEV Src_ Evt_Type___ Sens# Evt_detail - Trig [Evt_data]
+0001 03/01/15 01:56:12 MIN Sms  Minor error test
+0002 03/02/15 18:14:06 MAJ BMC  Major error test
+0003 03/02/15 18:18:41 CRT Sms  Critical error test
+ipmiutil sel, completed successfully
+Could not open log file: C:\Adaptec\Adaptec Storage Manager\UcliEvt.log
+Controllers found: 1
+----------------------------------------------------------------------
+Controller information
+----------------------------------------------------------------------
+   Controller Status                        : Optimal
+   Channel description                      : SAS/SATA
+   Controller Model                         : Adaptec 5805Z
+   Controller Serial Number                 : 1B4311CD6A9
+   Physical Slot                            : 16
+   Temperature                              : 68 C/ 154 F (Normal)
+   Installed memory                         : 512 MB
+   Copyback                                 : Disabled
+   Background consistency check             : Disabled
+   Automatic Failover                       : Enabled
+   Global task priority                     : High
+   Performance Mode                         : Default/Dynamic
+   Stayawake period                         : Disabled
+   Spinup limit internal drives             : 0
+   Spinup limit external drives             : 0
+   Defunct disk drive count                 : 0
+   Logical devices/Failed/Degraded          : 2/0/0
+   SSDs assigned to MaxCache pool           : 0
+   Maximum SSDs allowed in MaxCache pool    : 8
+   MaxCache Read Cache Pool Size            : 0.000 GB
+   MaxCache flush and fetch rate            : 0
+   MaxCache Read, Write Balance Factor      : 3,1
+   NCQ status                               : Enabled
+   Statistics data collection mode          : Enabled
+   --------------------------------------------------------
+   Controller Version Information
+   --------------------------------------------------------
+   BIOS                                     : 5.2-0 (18950)
+   Firmware                                 : 5.2-0 (18950)
+   Driver                                   : 7.5-0 (32028)
+   Boot Flash                               : 5.2-0 (18950)
+   --------------------------------------------------------
+   Controller ZMM Information
+   --------------------------------------------------------
+   Status                                   : ZMM Optimal
+
+----------------------------------------------------------------------
+Logical device information
+----------------------------------------------------------------------
+Logical device number 0
+   Logical device name                      : RAID1-A
+   RAID level                               : 1
+   Status of logical device                 : Degraded
+   Size                                     : 476150 MB
+   Read-cache mode                          : Enabled
+   MaxCache preferred read cache setting    : Enabled
+   MaxCache read cache setting              : Disabled
+   Write-cache mode                         : Enabled (write-back)
+   Write-cache setting                      : Enabled (write-back) when protected by battery/ZMM
+   Partitioned                              : Yes
+   Protected by Hot-Spare                   : No
+   Bootable                                 : Yes
+   Failed stripes                           : No
+   Power settings                           : Disabled
+   --------------------------------------------------------
+   Logical device segment information
+   --------------------------------------------------------
+   Segment 0                                : Present (Controller:1,Connector:1,Device:0)      WD-WMAYP2319858
+   Segment 1                                : Inconsistent (Controller:1,Connector:1,Device:1)      WD-WMAYP2302809
+
+Logical device number 1
+   Logical device name                      : RAID1-B
+   RAID level                               : 1
+   Status of logical device                 : Optimal
+   Size                                     : 953334 MB
+   Read-cache mode                          : Enabled
+   MaxCache preferred read cache setting    : Enabled
+   MaxCache read cache setting              : Disabled
+   Write-cache mode                         : Enabled (write-back)
+   Write-cache setting                      : Enabled (write-back) when protected by battery/ZMM
+   Partitioned                              : Yes
+   Protected by Hot-Spare                   : No
+   Bootable                                 : No
+   Failed stripes                           : No
+   Power settings                           : Disabled
+   --------------------------------------------------------
+   Logical device segment information
+   --------------------------------------------------------
+   Segment 0                                : Present (Controller:1,Connector:1,Device:2)      WD-WCAW36596206
+   Segment 1                                : Present (Controller:1,Connector:1,Device:3)      WD-WCAW36862052
+
+
+----------------------------------------------------------------------
+Physical Device information
+----------------------------------------------------------------------
+      Device #0
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 3.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,4(4:0)
+         Reported Location                  : Connector 1, Device 0
+         Vendor                             : WDC
+         Model                              : WD5003ABYX-0
+         Firmware                           : 01.01S02
+         Serial number                      : WD-WMAYP2319858
+         Size                               : 476940 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         SSD                                : No
+         MaxCache Capable                   : No
+         MaxCache Assigned                  : No
+         NCQ status                         : Enabled
+      Device #1
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 3.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,5(5:0)
+         Reported Location                  : Connector 1, Device 1
+         Vendor                             : WDC
+         Model                              : WD5003ABYX-0
+         Firmware                           : 01.01S02
+         Serial number                      : WD-WMAYP2302809
+         Size                               : 476940 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         SSD                                : No
+         MaxCache Capable                   : No
+         MaxCache Assigned                  : No
+         NCQ status                         : Enabled
+      Device #2
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 3.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,6(6:0)
+         Reported Location                  : Connector 1, Device 2
+         Vendor                             : WDC
+         Model                              : WD1003FBYX-0
+         Firmware                           : 01.01V02
+         Serial number                      : WD-WCAW36596206
+         Size                               : 953869 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         SSD                                : No
+         MaxCache Capable                   : No
+         MaxCache Assigned                  : No
+         NCQ status                         : Enabled
+      Device #3
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 3.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,7(7:0)
+         Reported Location                  : Connector 1, Device 3
+         Vendor                             : WDC
+         Model                              : WD1003FBYX-0
+         Firmware                           : 01.01V02
+         Serial number                      : WD-WCAW36862052
+         Size                               : 953869 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         SSD                                : No
+         MaxCache Capable                   : No
+         MaxCache Assigned                  : No
+         NCQ status                         : Enabled
+
+
+Command completed successfully.
+Could not open log file: C:\Adaptec\Adaptec Storage Manager\UcliEvt.log
